@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif, Georgia;
+    margin: 0;
+}
+/* Header/logo Title */
+.header {
+    padding: 1px;
+    text-align: center;
+    background: #17a689;
+    color: white;
+    position: relative;
+    border: 1px;
+}
+
+.home {
+  border: 1px solid #f00;
+  position: relative;
+  z-index: 2;
+  top: 0;
+}
+
+.smiley {
+  border: 1 px solid #f00;
+  position: relative;
+  z-index: 2
+  top:0
+
+}
+
+.vape {
+  border: 1px solid #0f0;
+ position: absolute;
+ z-index: 1;
+ top: 0;
+ left 0;
+}
+
+.vape2 {
+  border: 1px solid #0f0;
+ position: absolute;
+ z-index: 1;
+ top: 0;
+ right: 20px;
+ -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+}
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+
+}
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+
+}
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* Column container */
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+/* Main column */
+.main {
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+/* Footer */
+.footer {
+    padding: 1px;
+    text-align: center;
+    background: #ddd;
+}
+/* Responsive layout - when the screen is less than 750px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 750px) {
+    .row {
+        flex-direction: column;
+    }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 450px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+html, body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   scroll-behaviour: smooth;
+}
+img {
+   padding: 0;
+   display: block;
+   margin: 0 auto;
+   max-height: 100%;
+   max-width: 100%;
+   max-height: 500px;
+   /* max-width: 500px; */
+ }
+
+</style>
+</head>
+<body>
+
+<!-- <div style="width: 700px; margin: 0 auto; overflow: hidden;">
+  <div style="float: left; width: 80%;">Left Column</div>
+   <div style="float: right; width: 20%;">Right Column</div> -->
+<div class="header">
+  <h1>Alvin Kwan ❀ 關子穎 </h1>
+  <img class = "home" src = "home.jpg" alt = "my home" />
+  <h2>Stay Positive ❀ 保持正面</h2>
+</div>
+
+<div class="navbar">
+  <a href="#home" class = "active">H o m e</a>
+  <a href="#personal project">P e r s o n a l P r o j e c t s</a>
+  <a href="#nawky">N a w k y</a>
+  <a href="#dinner">d i n n e r</a>
+  <!-- <a href="www.linkedin.com/in/alvin-cw-kwan"> <img class = "linkedin" src = "linkedin.jpg"> </a> -->
+</div>
+
+
+<!---HOME --->
+<div class = "website">
+    <div class="row">
+      <div class="side">
+        <img class = "alvin" src = "smiley.jpg">
+      </div>
+      <div class="side">
+
+        <h2>About me</h2>
+      <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+          <p>Hey sunshine, thanks for visiting my website! I'm Alvin,
+        currently a 3rd year student at the University of British Columbia
+      studying Business and Computer Science. </p>
+          <p>A Canadian born and raised in Hong Kong, I've come over here
+          not only for University, but to explore my second home in a country
+          and lifestyle still foreign to me. </p>
+        <p>As an aspiring Product Manager, I'm currently looking for a software
+          engineering internship for the summer of 2019 but I'm open to new opportunities!</p>
+
+        <br>
+
+          <h3>Contact</h3>
+           <p>Want to see if this email button actually works? </p>
+           <p> Or... if you want to reach out for any inquiries / chats/ collaborations. Feel free to send me a message! </p>
+        </div>
+      </div>
+    </div>
+
+<!---PERSONALPROJECT --->
+<div class="row" id = "personal project">
+  <!-- </div> -->
+  <div class="side">
+
+        <img class = "alvin" src = "sleepy.jpg">
+      <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+      <p>A recruiter eh? Or someone who likes to go straight to business,
+        well feel free to look around!</p>
+        <p> When I'm not occupied by school, work, life and sleep (very underrated!).Visit my GitHub to have an in-depth view of my projects.</p>
+  </div>
+    <div class="side">
+      <h2>Personal Projects</h2>
+      <h4>☐ This Website</h4>
+      <h4>☐ Sound Bite Announcer Chrome Extension </h4>
+      <h4>☐ 2D Portal Game (WIP) </h4>
+    </div>
+</div>
+
+<!---NAWKY --->
+<div class="row" id = "nawky">
+  <div class="side">
+      <h2>Nawky</h2>
+      <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+      <iframe width="520" height="315" src="https://www.youtube.com/embed/98YoutN34h0?rel=0"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
+    </div>
+  <div class="side">
+    <img class = "alvin" src = "tofu.jpg" vspace = "10">
+    <p>Current side hobby of editing/filming light-hearted videos that people can relate to.
+    I've taken a liking to making parodies of pop-culture shows featuring my university.</p>
+  </div>
+</div>
+
+<!---NAWKY --->
+<div class="row" id = "dinner">
+  <div class="side">
+      <h2>d i n n e r</h2>
+      <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+      <p>Aside from digital projects, I like to cook meals for friends and family from
+        time to time. Cooking food for newcomers is pretty daunting,
+        guess I'll set out my experiences in the B&F industry</p>
+        <!-- <h4> ☐Sulmida - 2 days in and fired LOL, Cantonese != Northeastern Mandarin</h4> -->
+        <h4> ☐Pacific Coffee Company - 1 week barista trainee during my internship there</h4>
+        <h4> ☐Kee Wah Baking Studio Assistant - 1 month </h4>
+        <h4> ☐Have watched more youtube cooking tutorial videos than I'll like to admit </h4>
+  </div>
+  <div class="side">
+      <img class = "alvin" src = "pasta.gif" alt = "just a boy cookin pasta">
+  </div>
+</div>
+
+
+<!---DINNER --->
+
+<div class="footer">
+  <h3>Work in progress</h3>
+
+</div>
+<!-- </div> -->
+
+</body>
+</html>
