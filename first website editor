@@ -182,9 +182,9 @@ img {
 
 <div class="navbar">
   <a href="#home" class = "active">H o m e</a>
+  <a href="#resume">R E S U M E</a>
   <a href="#personal project">P e r s o n a l P r o j e c t s</a>
   <a href="#nawky">N a w k y</a>
-  <a href="#dinner">d i n n e r</a>
   <!-- <a href="www.linkedin.com/in/alvin-cw-kwan"> <img class = "linkedin" src = "linkedin.jpg"> </a> -->
 </div>
 
@@ -199,20 +199,19 @@ img {
 
         <h2>About me</h2>
       <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
-          <p>Hey sunshine, thanks for visiting my website! I'm Alvin,
+          <p>Hi there, thanks for visiting my website! I'm Alvin,
         currently a 3rd year student at the University of British Columbia
       studying Business and Computer Science. </p>
           <p>A Canadian born and raised in Hong Kong, I've come over here
-          not only for University, but to explore my second home in a country
-          and lifestyle still foreign to me. </p>
+          not only for University, but to explore work opportunities in the
+          tech sector. </p>
         <p>As an aspiring Product Manager, I'm currently looking for a software
           engineering internship for the summer of 2019 but I'm open to new opportunities!</p>
-
         <br>
 
           <h3>Contact</h3>
-           <p>Want to see if this email button actually works? </p>
-           <p> Or... if you want to reach out for any inquiries / chats/ collaborations. Feel free to send me a message! </p>
+           <p> If you want to reach out for any inquiries / chats/ collaborations. Feel free to send me a message! </p>
+           <p> alvinkwan24@gmail.com </p>
         </div>
       </div>
     </div>
@@ -226,13 +225,16 @@ img {
       <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
       <p>A recruiter eh? Or someone who likes to go straight to business,
         well feel free to look around!</p>
+        <p>https://github.com/akwan224</p>
         <p> When I'm not occupied by school, work, life and sleep (very underrated!).Visit my GitHub to have an in-depth view of my projects.</p>
   </div>
     <div class="side">
       <h2>Personal Projects</h2>
-      <h4>☐ This Website</h4>
+      <h4>☐ 2D Portal Game  </h4>
       <h4>☐ Sound Bite Announcer Chrome Extension </h4>
-      <h4>☐ 2D Portal Game (WIP) </h4>
+      <h4>☐ Chinese Pinyin Converter </h4>
+      <h4>☐ This Website</h4>
+
     </div>
 </div>
 
@@ -252,22 +254,6 @@ img {
 </div>
 
 <!---NAWKY --->
-<div class="row" id = "dinner">
-  <div class="side">
-      <h2>d i n n e r</h2>
-      <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
-      <p>Aside from digital projects, I like to cook meals for friends and family from
-        time to time. Cooking food for newcomers is pretty daunting,
-        guess I'll set out my experiences in the B&F industry</p>
-        <!-- <h4> ☐Sulmida - 2 days in and fired LOL, Cantonese != Northeastern Mandarin</h4> -->
-        <h4> ☐Pacific Coffee Company - 1 week barista trainee during my internship there</h4>
-        <h4> ☐Kee Wah Baking Studio Assistant - 1 month </h4>
-        <h4> ☐Have watched more youtube cooking tutorial videos than I'll like to admit </h4>
-  </div>
-  <div class="side">
-      <img class = "alvin" src = "pasta.gif" alt = "just a boy cookin pasta">
-  </div>
-</div>
 
 
 <!---DINNER --->
