@@ -30,15 +30,15 @@ body {
   position: relative;
   z-index: 2;
   top: 0;
+  border : 0;
 }
 
-.smiley {
+/* .smiley {
   border: 1 px solid #f00;
   position: relative;
   z-index: 2
   top:0
-
-}
+} */
 
 .vape {
   border: 1px solid #0f0;
@@ -126,12 +126,7 @@ body {
     background-color: white;
     padding: 20px;
 }
-/* Fake image, just for this example */
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-}
+
 /* Footer */
 .footer {
     padding: 1px;
@@ -139,7 +134,7 @@ body {
     background: #ddd;
 }
 /* Responsive layout - when the screen is less than 750px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 700px) {
     .row {
         flex-direction: column;
     }
@@ -182,7 +177,8 @@ img {
 
 <div class="navbar">
   <a href="#home" class = "active">H o m e</a>
-  <a href="#resume">R E S U M E</a>
+  <a href="#aboutme">A b o u t    M e</a>
+  <a href="#resume">R e s u m e</a>
   <a href="#personal project">P e r s o n a l P r o j e c t s</a>
   <a href="#nawky">N a w k y</a>
   <!-- <a href="www.linkedin.com/in/alvin-cw-kwan"> <img class = "linkedin" src = "linkedin.jpg"> </a> -->
@@ -191,7 +187,7 @@ img {
 
 <!---HOME --->
 <div class = "website">
-    <div class="row">
+    <div class="row" id = "aboutme">
       <div class="side">
         <img class = "alvin" src = "smiley.jpg">
       </div>
@@ -203,10 +199,10 @@ img {
         currently a 3rd year student at the University of British Columbia
       studying Business and Computer Science. </p>
           <p>A Canadian born and raised in Hong Kong, I've come over here
-          not only for University, but to explore work opportunities in the
+          not only for University, but to explore a different way of life and work opportunities in the
           tech sector. </p>
         <p>As an aspiring Product Manager, I'm currently looking for a software
-          engineering internship for the summer of 2019 but I'm open to new opportunities!</p>
+          engineering internship for 2019 fall but I'm open to new opportunities!</p>
         <br>
 
           <h3>Contact</h3>
@@ -215,6 +211,11 @@ img {
         </div>
       </div>
     </div>
+
+<!---Resume --->
+<div class="row" id = "aboutme">
+
+</div>
 
 <!---PERSONALPROJECT --->
 <div class="row" id = "personal project">
@@ -226,15 +227,21 @@ img {
       <p>A recruiter eh? Or someone who likes to go straight to business,
         well feel free to look around!</p>
         <p>https://github.com/akwan224</p>
-        <p> When I'm not occupied by school, work, life and sleep (very underrated!).Visit my GitHub to have an in-depth view of my projects.</p>
+        <p> Please visit my GitHub to have an in-depth view of my projects.</p>
   </div>
     <div class="side">
       <h2>Personal Projects</h2>
       <h4>☐ 2D Portal Game  </h4>
       <h4>☐ Sound Bite Announcer Chrome Extension </h4>
-      <h4>☐ Chinese Pinyin Converter </h4>
+      <h4>☐ Chinese Pinyin Converter (WIP) </h4>
       <h4>☐ This Website</h4>
-
+    </div>
+    <div class="side">
+      <h2>Personal Projects</h2>
+      <h4>☐ 2D Portal Game  </h4>
+      <h4>☐ Sound Bite Announcer Chrome Extension </h4>
+      <h4>☐ Chinese Pinyin Converter (WIP) </h4>
+      <h4>☐ This Website</h4>
     </div>
 </div>
 
@@ -243,7 +250,7 @@ img {
   <div class="side">
       <h2>Nawky</h2>
       <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
-      <iframe width="520" height="315" src="https://www.youtube.com/embed/98YoutN34h0?rel=0"
+      <iframe width="600" height="450" align ="center" src="https://www.youtube.com/embed/98YoutN34h0?rel=0"
       frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
     </div>
   <div class="side">
@@ -258,10 +265,10 @@ img {
 
 <!---DINNER --->
 
-<div class="footer">
+<!-- <div class="footer">
   <h3>Work in progress</h3>
 
-</div>
+</div> -->
 <!-- </div> -->
 
 </body>
