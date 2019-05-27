@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif, Georgia;
+    margin: 0;
+}
+/* Header/logo Title */
+.header {
+    padding: 1px;
+    text-align: center;
+    background: #17a689;
+    color: white;
+    position: relative;
+    border: 1px;
+}
+
+.home {
+  border: 1px solid #f00;
+  position: relative;
+  z-index: 2;
+  top: 0;
+  border : 0;
+}
+
+.movetext {
+    position: relative;
+    top: 50px;
+}
+.movelittletext {
+    position: relative;
+    top: 25px;
+}
+.movebigtext {
+    position: relative;
+    top: 68px;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+}
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    padding: 1px;
+    text-align: center;
+    color: white;
+}
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+
+}
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+   width: 100%;
+   left: 0;
+   top: 0;
+   z-index: 100;
+   border-top: 0;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+/* Column container */
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+/* Main column */
+.main {
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 1px;
+    text-align: center;
+    background: #ddd;
+}
+
+.scroller {
+  scroll-snap-type: mandatory;
+  /* older spec implementation */
+  scroll-snap-destination: 0% 100%;
+  scroll-snap-points-x: repeat(100%);
+}
+
+.page {
+  scroll-snap-align: start;
+}
+
+.tab { margin-left: 40px; }
+/* Responsive layout - when the screen is less than 750px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 750px) {
+    .row {
+        flex-direction: column;
+    }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 450px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+html, body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   scroll-behaviour: smooth;
+   position:
+   top: 50px;
+   /* text-align: center; */
+}
+img {
+   padding: 0;
+   display: block;
+   margin: 0 auto;
+   max-height: 100%;
+   max-width: 100%;
+   max-height: 500px;
+   /* max-width: 500px; */
+   text-align: center;
+   position: relative;
+   top: 50px;
+ }
+
+</style>
+</head>
+<body>
+
+<!-- <div style="width: 700px; margin: 0 auto; overflow: hidden;">
+  <div style="float: left; width: 80%;">Left Column</div>
+   <div style="float: right; width: 20%;">Right Column</div> -->
+<div class="header">
+  <h1>Alvin Kwan ❀ 關 子 穎 </h1>
+  <img class = "home" src = "img/home.jpg" alt = "my home" />
+  <h2>Stay Positive    ❀ 保 持 正 面</h2>
+</div>
+
+<div class="navbar">
+  <a style="font-weight:bold" href="#home" class = "active">Home</a>
+  <a style="font-weight:bold" href="#aboutme">About Me</a>
+  <a style="font-weight:bold" href="img/resume.pdf">Resume </a>
+  <a style="font-weight:bold" href="#personal project">Personal Projects</a>
+  <a style="font-weight:bold" href="#nawky">Youtube</a>
+  <!-- <a href="www.linkedin.com/in/alvin-cw-kwan"> <img class = "linkedin" src = "linkedin.jpg"> </a> -->
+</div>
+
+
+<!---HOME --->
+<div class = "website">
+    <div class="row" id = "aboutme">
+      <!-- <div class="side"> -->
+      <div class="side">
+
+      </div>
+
+      <div class="side">
+      <div>
+        <img class = "alvin" src = "img/smiley.jpg">
+
+      <!-- </div> -->
+      <!-- <div class="side"> -->
+
+        <h2 class="movetext">About me</h2>
+      <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+          <p class="movetext">Hi there, thanks for visiting my website! I'm Alvin,
+          currently a 3rd year student at the University of British Columbia
+      studying Business and Computer Science.
+          A Canadian born and raised in Hong Kong, I've come over here
+          not only for University, but to explore a different way of life and culture. and work opportunities in the
+          tech sector.
+        As an aspiring Product Manager, I'm currently looking for a software
+          engineering internship for 2019 fall but I'm open to new opportunities!</p>
+        <br>
+
+          <h3 class="movelittletext">Contact</h3>
+           <p class="movelittletext"> If you want to reach out for any inquiries / chats/ collaborations. Feel free to send me a message! </p>
+           <p class="movelittletext"> alvinkwan24@gmail.com </p>
+           <!-- <p class="movelittletext"> https://www.linkedin.com/in/alvin-cw-kwan/</p> -->
+           <a class="movelittletext" href ="https://www.linkedin.com/in/alvin-cw-kwan/">https://www.linkedin.com/in/alvin-cw-kwan/</a>
+        </div>
+      </div >
+      <div class="side">
+
+      </div>
+    </div>
+
+<!---Resume --->
+<!-- <div class="row" id = "resume">
+
+</div> -->
+
+<!---PERSONALPROJECT --->
+<div class="row" id = "personal project">
+  <!-- </div> -->
+
+  <div class="side">
+    <h2>Personal Projects</h2>
+    <h4>☐ 2D Portal Game  </h4>
+    <h4>☐ Soundboard Chrome Extension </h4>
+    <h4>☐ Chinese Pinyin Converter (WIP) </h4>
+    <h4>☐ This Website</h4>
+
+    <p class="movetext">A recruiter eh? Or someone who likes to go straight to business,
+      well feel free to look around!</p>
+      <p class="movetext"> Please visit my GitHub to have an in-depth view of my projects.</p>
+      <a class="movetext" href ="https://github.com/akwan224">https://github.com/akwan224</a>
+  </div>
+  <div class="side">
+
+        <!-- <img class = "alvin" src = "sleepy.jpg"> -->
+        <img class = "alvin" src = "img/portalGame.jpg">
+      <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+      <h3 class="movetext">2D Portal Game</h3>
+      <p class="movetext"> Recreated Valve's flagship video game puzzle series Portal into a 2d maze game. Made without a game engine, the game operates in real time with key commands. </p>
+      <p class="movetext"> Navigate your character (Atlas) through the maze by reaching the pink checkpoint. Use your portal gun, to teleport through previously unaccessible parts of the maze.
+        The intricacy of the levels scale as you progress through the game </p>
+  </div>
+
+    <div class="side">
+      <img class = "alvin" src = "img/sound.jpg">
+      <h3 class="movetext"> Soundboard Chrome Extension</h3>
+    <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+    <p class="movetext">Created a Google Chrome extension that plays audio bites using celebrity soundboards
+    The extension originally played audio jingles but was often times annoying and repetitive. </p>
+    <p class="movetext">Enter your list of desired websites. Anytime there is a mouse click on those websites, an audio bite of
+    your desired celebrity will play.  </p>
+    </div>
+</div>
+
+<!---NAWKY --->
+<div class="row" id = "nawky">
+  <div class="side">
+      <h2>Youtube/Nawky</h2>
+      <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+      <iframe width= 100%; height=50%;  align ="center" src="https://www.youtube.com/embed/98YoutN34h0?rel=0"
+      frameborder="0" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
+    </div>
+  <div class="side">
+    <!-- <img class = "alvin" src = "tofu.jpg" vspace = "10"> -->
+    <img class = "movebigtext" height=50%;   src = "img/ubyssey.jpg">
+
+    <p class="movebigtext tab" >Current side hobby of editing/filming light-hearted videos that people can relate to.
+    I've taken a liking to making parodies of pop-culture shows featuring my university.  To my suprise, a few of my videos even made it to the school paper!
+    The name of the channel comes from me reversing my childhood nickname "Kwanny". </p>
+  </div>
+</div>
+
+<!---NAWKY --->
+
+
+<!---DINNER --->
+
+<!-- <div class="footer">
+  <h3>Work in progress</h3>
+
+</div> -->
+<!-- </div> -->
+<!-- .vape {
+  border: 1px solid #0f0;
+ position: absolute;
+ z-index: 1;
+ top: 0;
+ left 0;
+}
+
+.vape2 {
+  border: 1px solid #0f0;
+ position: absolute;
+ z-index: 1;
+ top: 0;
+ right: 20px;
+ -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+} -->
+
+</body>
+</html>
